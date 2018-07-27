@@ -31,7 +31,7 @@ const Education = ({ education }) => {
                   {`${j.startDate} - ${j.endDate} `}
                 </Grid.Column>
                 <Grid.Column textAlign="right">
-                  <Icon name="star" />{`GPA: ${j.gpa}`}
+		{(j.gpa) && <Icon name="star" />{`GPA: ${j.gpa}`}}
                 </Grid.Column>
               </Grid>
             </div>
